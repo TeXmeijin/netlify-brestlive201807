@@ -1,0 +1,74 @@
+extends _components/basepage.pug
+
+block pageStyle
+
+block contents
+  main.main.page-index
+    .mod-concept
+      .wrap
+        p.explain
+            span お金以外の様々な形で
+            br
+            span 起業家や起業を目指す人を支援しよう
+        p.name
+            span Inov
+            span.icon-Coin
+    .mod-detailConcept
+      p.explain
+        span 起業家や起業を目指す人たちに、
+        br
+        span もっと自由な支援の形を。
+      p.message
+        span Inov(イノブ)は応援コメントやMTGへの参加、アンケート回答など、現金以外の様々な支援を可視化するサービスです
+        br
+        span 支援を可視化するため、inovという独自通貨をサービス内で利用します
+    .mod-intoService
+      h2
+        span.heading
+          span 起業プロジェクト一覧
+      ul.projectList
+        li
+          .title
+            span 親元離れて一人暮らしをしている人に、両親との思い出を作る機会を提供したい！
+          .author
+            span.icon-Person
+            span Shoichi Mashibaさん
+          .result
+            span.icon-Idea
+            //- span.label 集めたアイデア
+            span.count 116個
+            span.icon-Comment
+            //- span.label 集めた意見/アドバイス
+            span.count 20個
+            span.icon-Edit
+            //- span.label 実施したアンケート/インタビュー
+            span.count 12回
+    .mod-howtoInov
+      .get
+        h2
+          span.heading
+            span inovを手に入れる方法
+        ul
+          li
+            p.abstract アカウント新規登録する
+            p.detail.noticeArea 本サイトに新規登録すると、100inov受け取ります
+          li
+            p.abstract 起業家向けWeb記事をシェアする
+            p.detail.noticeArea スタートアップの買収ニュースなど、起業家向けのWeb記事をシェアしていいねが貰えると応じてinovを貰えます
+          li
+            p.abstract 現金で購入する
+            p.detail.noticeArea 現金で購入してもinovを手に入れることができます。inovの購入者が増えるとinovが高騰し、inovを持っている起業家が資金調達できます
+      .use
+        h2
+          span.heading
+            span inovを使う方法
+        ul
+          li
+            p.abstract いいね、応援コメント、アイデア出しの手伝い、アンケート回答などの支援をする
+            p.detail.noticeArea 特定のアクションを起業プロジェクトに向けて実行すると、その内容に応じてinovを支援できます
+          li
+            p.abstract アンケートデータを購入する
+            p.detail.noticeArea 本サービスに溜まったアンケートのデータを匿名化した上で集計・分析した結果をinovで購入できます
+        //-   li
+        //-     p.abstract クローズドで本サービスを利用する
+        //-     p.detail.noticeArea 社内の新規事業等で、クローズドで利用し社内のコミュニケーション活性化等でご利用になる場合、inovを利用してクローズドな利用ができます

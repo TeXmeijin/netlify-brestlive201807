@@ -1,0 +1,43 @@
+a {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+}
+
+.titleLabel {
+    font-weight: bold;
+}
+
+.c-label {
+    display: inline-block;
+    margin-right: 10px;
+    padding-right: 5px;
+    color: $gray;
+    font-size: 90%;
+}
+
+.isHide {
+    display: none;
+}
+
+.only-pc {
+    @include mq {
+        display: block !important;
+    }
+}
+
+.no-sp {
+    @include mq('sp') {
+        display: none !important;
+    }
+}
+
+.no-pc {
+    @include mq {
+        display: none !important;
+    }
+}
+
+.block {
+    display: block;
+}

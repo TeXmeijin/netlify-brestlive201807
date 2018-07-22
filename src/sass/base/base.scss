@@ -1,0 +1,26 @@
+html {
+    font-size: 100%;
+    /* 10px */
+}
+
+body {
+    line-height: 1.4;
+    color: $body;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+h1 {
+    font-size: 120%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 105%;
+}

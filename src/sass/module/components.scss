@@ -1,0 +1,40 @@
+button {
+    background: $white;
+    padding: 10px;
+    border-radius: 5px;
+    color: $yellow;
+    border: 2px solid $yellow; // border-bottom: 2px solid $blackGreen;
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+.modal {
+    width: calc(100% - 60px);
+    margin: 0 20px;
+    position: fixed;
+    top: 20%;
+    background: $white;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+    @include mq {
+        width: 500px;
+        margin: 0 auto;
+        left: calc((100% - 500px) / 2)
+    }
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.3);
+}

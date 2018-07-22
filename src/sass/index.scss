@@ -1,0 +1,316 @@
+@charset "UTF-8";
+.mod-breadcrumb {
+    padding: 5px;
+    background: $lightGray;
+    font-size: 90%;
+    color: $gray;
+}
+
+.mod-breadcrumb .item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.mod-breadcrumb .item:first-child {
+    color: $red;
+}
+
+.mod-heading {
+    padding: 10px;
+    position: relative;
+}
+
+.topicTitleLabel {
+    border: 1px solid $lightGreen;
+    border-radius: 1px;
+    padding: 10px;
+    position: absolute;
+    width: 170px;
+    box-sizing: border-box;
+    left: calc(50% - 85px);
+    text-align: center;
+    background: $white;
+}
+
+.topicTitle {
+    margin-top: 23px;
+    line-height: 1.7;
+    font-weight: bold;
+    padding: 30px 20px 20px;
+    border: 1px solid $lightGray;
+    border-radius: 5px;
+    font-size: 110%;
+    background: repeating-linear-gradient(-45deg, $lightGreen, $lightGreen 3px, $white 3px, $white 7px);
+}
+
+.mod-info {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.mod-info .author {
+    margin-bottom: 10px;
+}
+
+.mod-info .heading:before {
+    @include heading;
+}
+
+.mod-info .heading {
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.mod-info .heading span {
+    @include headingLabel;
+}
+
+.mod-info .about {
+    font-size: 80%;
+    padding: 10px;
+    border: 1px solid $lightGray;
+}
+
+.mod-actionBtn {
+    padding: 10px;
+}
+
+.mod-actionBtn h2 {
+    text-align: center;
+}
+
+h2 .heading:before {
+    @include heading;
+}
+
+h2 .heading span {
+    @include headingLabel;
+}
+
+.mod-actionBtn ul li {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mod-actionBtn ul li .noticeArea {
+    @include noticeArea;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mod-actionBtn ul li button {
+    flex-grow: 1;
+}
+
+.mod-actionBtn ul li button.favorite {
+    border-color: $pink;
+    color: $pink;
+}
+
+.mod-actionBtn ul li button.comment {
+    border-color: $emerald;
+    color: $emerald;
+}
+
+.mod-actionBtn ul li button.interview {
+    border-color: $mediumGreen;
+    color: $mediumGreen;
+}
+
+.mod-actionBtn ul li button.funding {
+    border-color: $orange;
+    color: $orange;
+}
+
+.mod-actionBtn ul li .countCoin {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.mod-actionBtn ul li .countCoin span {
+    line-height: 48px;
+}
+
+.mod-fixedFooter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.mod-fixedFooter p {
+    text-align: center;
+}
+
+.mod-fixedFooter .keyMsg {
+    width: 60%;
+    padding: 8px 0;
+    box-sizing: border-box;
+    color: $white;
+}
+
+.mod-fixedFooter .accountRemain {
+    width: 40%;
+    padding: 3px;
+    margin-right: 10px;
+    background: $white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.mod-fixedFooter .accountRemain .remainLabel {
+    font-size: 85%;
+    display: block;
+}
+
+.mod-fixedFooter .accountRemain .remainNum {
+    font-weight: bold;
+    font-size: 160%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.mod-inoverRanking {
+    padding: 10px;
+}
+
+.mod-inoverRanking ul li {
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid $lightGray;
+    margin-bottom: 10px;
+}
+
+.mod-inoverRanking .rankNum {
+    background: $yellow;
+    color: $white;
+    margin-right: 5px;
+    font-weight: bold;
+    padding: 5px;
+    line-height: 107px;
+    box-sizing: border-box;
+}
+
+.mod-inoverRanking ul li .profileImg {
+    margin: 10px 0;
+    padding: 21px 0;
+    margin-right: 20px;
+}
+
+.mod-inoverRanking .profileImg img {
+    width: 50px;
+    height: 50px;
+}
+
+.mod-inoverRanking .profileInfo {
+    margin: 10px 0;
+}
+
+.mod-inoverRanking .profileInfo .name {
+    font-size: 110%;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.mod-inoverRanking .profileInfo .sumInov {
+    margin-bottom: 5px;
+}
+
+.mod-inoverRanking .profileInfo .sumInov .label {
+    font-size: 85%;
+}
+
+.mod-inoverRanking .profileInfo .sumInov .count {
+    font-size: 140%;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0px 5px;
+    color: $mediumGreen;
+}
+
+.mod-concept {
+    padding: 20px;
+    background: repeating-linear-gradient(-45deg, $lightGreen, $lightGreen 3px, $white 3px, $white 7px);
+}
+
+.mod-concept .wrap {
+    background: $white;
+    padding: 30px 10px;
+}
+
+.mod-concept .wrap p {
+    text-align: center;
+}
+
+.mod-concept .wrap .name {
+    font-size: 250%;
+    font-weight: bold;
+}
+
+.mod-detailConcept {
+    padding: 20px 30px;
+    background: $lightGray;
+}
+
+.mod-detailConcept .explain {
+    text-align: center;
+    font-size: 120%;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.mod-detailConcept .message {
+    text-align: center;
+    font-size: 90%;
+    color: $gray;
+}
+
+.mod-intoService {
+    padding: 20px 10px;
+}
+
+.mod-howtoInov {
+    padding: 20px 10px;
+}
+
+.mod-howtoInov ul li {
+    margin: 10px 0;
+    padding: 10px 10px 10px 15px;
+    border: 1px solid $lightGray;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.mod-howtoInov ul li::before {
+    content: '';
+    width: 5px;
+    display: block;
+    height: 100%;
+    background: $yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mod-howtoInov .get {
+    margin-bottom: 30px;
+}
+
+.mod-howtoInov .abstract {
+    font-weight: bold;
+    padding: 5px;
+}
+
+.mod-howtoInov .noticeArea {
+    @include noticeArea;
+    font-size: 85%;
+}

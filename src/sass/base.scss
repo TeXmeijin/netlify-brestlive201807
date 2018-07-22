@@ -1,0 +1,17 @@
+@charset "UTF-8";
+// variable
+@import './variable/color.scss';
+@import './variable/font.scss';
+// base
+@import './base/reset.scss';
+@import './base/base.scss';
+// mixin
+@import './mixin/mixins.scss';
+// module
+@import './module/variables.scss';
+@import './module/components.scss';
+@import './module/classes.scss';
+// page
+@import './header.scss';
+@import './footer.scss';
+@import './index.scss';

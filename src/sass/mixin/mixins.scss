@@ -1,0 +1,50 @@
+/* media query */
+
+$breakpoints: ( 'sp': 'screen and (max-width: 768px)', 'pc': 'screen and (min-width: 769px)', ) !default;
+@mixin mq($breakpoint: pc) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+@mixin noticeArea {
+    color: $gray;
+    font-size: 75%;
+    font-weight: normal;
+    display: block;
+    padding: 5px;
+    background: $lightGray;
+}
+
+@mixin heading {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    border-radius: 3px;
+    background: $yellow;
+    height: 28px;
+    margin-right: 10px;
+}
+
+@mixin headingLabel {
+    line-height: 28px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+@mixin card {
+    border: 1px solid $lightGray;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
+    background: $white;
+}
+
+@mixin smallHeading {
+    padding: 2px;
+    padding-left: 5px;
+    border-left: 4px solid $darkGreen;
+}
+
+.smallHeading {
+    @include smallHeading;
+}

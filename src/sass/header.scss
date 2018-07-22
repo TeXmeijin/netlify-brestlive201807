@@ -1,0 +1,15 @@
+$headerHeight: 50px;
+.header {
+    background: $yellow;
+    height: $headerHeight;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 10px;
+    line-height: $headerHeight;
+    font-size: 130%;
+    color: $white;
+}

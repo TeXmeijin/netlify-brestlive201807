@@ -1,0 +1,149 @@
+extends _components/basepage.pug
+
+block pageStyle
+
+block contents
+  main.main.page-detail
+    .mod-breadcrumb
+      a(href="https://brest.nabimoon.com/").item
+        span.icon-Home
+      span.item ＞
+      span.item 親元離れて一人暮らしをしている...
+    .mod-heading
+      .topicTitleLabel
+        span 実現したいこと
+      .topicTitle
+        span 親元離れて一人暮らしをしている人に、両親との思い出を作る機会を提供したい！
+    .mod-info
+      .author
+        .name.heading
+          span.icon-Person
+          span.c-label 挑戦者
+          span Shoichi Mashibaさん
+        .createDate.heading
+          span.icon-Calender
+          span.c-label 開始日
+          span 2018年7月22日
+      .about
+        p
+          span 
+            | 私の両親は持病を持つ私を連れて遠い病院まで何度も通ってくれました。
+            br
+            | 経済的に厳しいときでもずっと笑顔でいてくれました。
+            br
+            | もう定年でいつ倒れるか分からない年齢です。
+            br
+            |
+            br
+            | 私はそんな両親に恩返しがしたいと思っています！！
+            br
+            | ですが自分も含め親孝行ができていないという人は数多くいるのが現状です。
+            br
+            |
+            br
+            | 私はそのような親孝行をしたくてもできていない人に、親孝行を簡単かつ継続してできる機会を提供したいと考えています。
+            br
+            | 親が求めているのはコミュニケーションと思い出の創出ではないか？という考えの元、有効な施策はないか日々悩んでいるところです。
+            br
+            |
+            br
+            | この考えに共感いただける方がいらっしゃいましたら是非一緒に考えていきましょう！
+            br
+            | 最終的には両親と別れるときに、「ごめんね」ではなくまず「ありがとう」とお互いに思える社会を目指します！
+            br
+            | よろしくお願いします！
+    .mod-actionBtn
+      h2
+        span.heading 
+          span 実現に向けた支援方法
+      ul
+        li
+          .countCoin
+            span.icon-Coin
+            span 3
+          button.favorite
+            span.icon-Heart
+            span 応援の「いいね！」を送る
+          .noticeArea
+            span 挑戦者にいいねを送ることで応援の気持ちを伝えることができます。一緒にinovを3支援します
+        li
+          .countCoin
+            span.icon-Coin
+            span 7
+          button.comment
+            span.icon-Comment
+            span 応援コメントを送る
+          .noticeArea
+            span 挑戦者に「ぜひ実現して欲しい」などの応援コメントを送ることができます。一緒にinovを7支援します
+        li
+          .countCoin
+            span.icon-Coin
+            span =fav
+          button.brainstorming
+            span.icon-Idea
+            span オンラインブレストに参加する
+          .noticeArea
+            span 挑戦者が求めているアイデアや意見をオンラインでブレストします。挑戦者と双方向で意思疎通できるのでより成功に向けて手助けできます。投稿した付箋に付いたいいね数に応じてinovを支援します
+        li
+          .countCoin
+            span.icon-Coin
+            span 20
+          button.interview
+            span.icon-Edit
+            span アンケート/インタビュー回答
+          .noticeArea
+            span 挑戦者が用意したアンケートや直接インタビューに回答します。一緒に20inovを支援します
+        //- li
+        //-   .countCoin
+        //-     span.icon-Coin
+        //-     span 100〜
+        //-   button.funding
+        //-     span.icon-Yen
+        //-     span 投げ銭をする
+    .mod-inoverRanking
+      h2
+        span.heading
+          span inov支援者ランキング
+      ul
+        li
+          .rankNum
+            span 1
+          .profileImg
+            img(src="/img/person_icon.png", alt="")
+          .profileInfo
+            .name
+              span Yusuke Saitohさん
+            .sumInov
+              span.label この挑戦への支援累計
+              span.count 56
+              span inov
+            .result
+              span.icon-Heart
+              span 3
+              span.icon-Comment
+              span 7
+              span.icon-Idea
+              span 26
+              span.icon-Edit
+              span 20
+        li
+          .rankNum
+            span 2
+          .profileImg
+            img(src="/img/person_icon.png", alt="")
+          .profileInfo
+            .name
+              span Yusuke Saitohさん
+            .sumInov
+              span.label この挑戦への支援累計
+              span.count 39
+              span inov
+            .result
+              span.icon-Heart
+              span 3
+              span.icon-Comment
+              span 0
+              span.icon-Idea
+              span 16
+              span.icon-Edit
+              span 20

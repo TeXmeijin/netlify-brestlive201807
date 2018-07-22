@@ -1,0 +1,178 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('./fonts/fontawesome-webfont.eot');
+  src: url('./fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('./fonts/fontawesome-webfont.woff') format('woff'), url('./fonts/fontawesome-webfont.ttf') format('truetype'), url('./fonts/fontawesome-webfont.svg') format('svg');
+}
+
+$iconHeightSp: 44px;
+@mixin icon($code) {
+  content: $code;
+  font-family: 'FontAwesome';
+  display: inline-block;
+  margin: 0 5px;
+}
+
+@mixin mediumIcon() {
+  height: $iconHeightSp;
+  width: $iconHeightSp;
+  font-size: 30px;
+  margin-right: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+.icon-Search:after {
+  @include icon('\f002');
+}
+
+.icon-AncleRight:after {
+  @include icon('\f105');
+}
+
+.icon-AncleDown:after {
+  @include icon('\f107');
+}
+
+.icon-Edit:after {
+  @include icon('\f044');
+  color: $emerald;
+}
+
+.icon-Heart:after {
+  @include icon('\f004');
+  color: $pink;
+}
+
+.icon-Calender::after {
+  @include icon('\f073');
+  color: $mediumGreen;
+}
+
+.icon-Coin::after {
+  @include icon('\f06c');
+  color: $yellow;
+}
+
+.icon-Person::after {
+  @include icon('\f2bd');
+  color: $purple;
+}
+
+.icon-Mail:after {
+  @include icon('\f0e0');
+}
+
+.icon-Yen:after {
+  @include icon('\f157');
+  color: $orange;
+  font-weight: bold;
+}
+
+.icon-UserCheck:after {
+  @include icon('\f058');
+}
+
+.icon-Home:after {
+  @include icon('\f015');
+}
+
+.icon-Comment:after {
+  @include icon('\f27a');
+}
+
+.icon-Train:after {
+  @include icon('\f239');
+}
+
+.icon-Subject {
+  @include mediumIcon();
+}
+
+.icon-Physics:after {
+  @include icon('\f076');
+  color: $blackBlue;
+}
+
+.icon-Chemistry:after {
+  @include icon('\f0c3');
+  color: $emerald;
+}
+
+.icon-Math:after {
+  @include icon('\f1ec');
+  color: $blue;
+}
+
+.icon-ChildMath:after {
+  @include icon('\f1ec');
+  color: $cyan;
+}
+
+.icon-Japanese:after {
+  @include icon('\f02d');
+  color: $orange;
+}
+
+.icon-Society:after {
+  @include icon('\f2de');
+  color: $yellow;
+}
+
+.icon-Idea:after {
+  @include icon('\f0eb');
+  color: $blue;
+}
+
+.icon-JapanHistory:after {
+  @include icon('\f1da');
+  color: $green;
+}
+
+.icon-OldJapanese:after {
+  @include icon('\f279');
+  color: $red;
+}
+
+.icon-English:after {
+  @include icon('\f1ab');
+  color: $pink;
+}
+
+.icon-WorldHistory:after {
+  @include icon('\f0ac');
+  color: $mediumGreen;
+}
+
+.iconTable .icon {
+  display: inline-block;
+  height: $iconHeightSp;
+  vertical-align: top;
+}
+
+.iconTable .iconLabel {
+  display: inline-block;
+  line-height: $iconHeightSp;
+  vertical-align: top;
+}
+
+.icon:after {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: $iconHeightSp;
+  height: $iconHeightSp;
+  content: '';
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon-Qa:after {
+  background-image: url(/img/noschool_qa_icon.png);
+}
+
+.icon-Blackboard:after {
+  background-image: url(/img/noschool_blackboard_icon.png);
+}
+
+.icon-SearchQa:after {
+  background-image: url(/img/noschool_search_qa_icon.png);
+}
